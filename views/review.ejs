@@ -1,3 +1,10 @@
 <h1>You are now reviewing: <%= thingVar %> </h1>
 
+<% if(thingVar.toLowerCase() === "books"){ %>
+
+  <p> Books Are The BEST!!! </p>
+<% } else  { %>
+  <p> You really should have chosen books</p>
+  <% } %>
+
 <p>This is the review.ejs file</p>

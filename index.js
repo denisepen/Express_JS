@@ -11,6 +11,16 @@ app.get('/review/:thing', function(req,res){
   res.render('review.ejs', {thingVar: thing})
 })
 
+app.get('/posts', function(req, res) {
+  var posts = [
+    {title: "Post1", author: "Frank"},
+    {title: "Ann's Post2", author: "Ann"},
+    {title: "Tess' Post3", author: "Tess"}
+  ]
+
+  res.render('posts.ejs', {posts: posts})
+})
+
 app.listen(3000, function(){
   console.log("Starting on Port 3000")
 })
