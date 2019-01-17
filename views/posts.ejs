@@ -1,8 +1,8 @@
+<link rel="stylesheet" href="app.css">
+
 <h1>The Posts Page</h1>
 
 <% posts.forEach(post => { %>
-  <h3>Title: <%=post.title %></h3>
-  <h4>Author: <%=post.author %></h4>
-  <hr>
-  <br>
+  <li><%=post.title %> - <strong><%=post.author %> </strong></li>
+
 <% }) %>
